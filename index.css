@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary: #ff782d;
+}
+* {
+  font-family: "Exo", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container-without-flex {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.page-name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.page-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-menu {
+  display: flex;
+  align-items: center;
+}
+
+.page-menu-active {
+  background-color: #f5f5f5;
+  color: var(--primary) !important;
+}
+
+.page-menu p a {
+  padding: 20px;
+  font-weight: 700;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.page-option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-option p a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-option-search-icon {
+  height: 48px;
+  width: 48px;
+  padding: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.page-banner {
+  height: 600px;
+  background-image: url("./images/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page-banner h1 {
+  font-size: 48px;
+  max-width: 450px;
+}
+
+.page-banner-description {
+  font-size: 18px;
+  color: #555555;
+  max-width: 520px;
+  margin-top: 20px;
+}
+
+.page-banner-button {
+  margin-top: 20px;
+  background-color: var(--primary);
+  padding: 10px 24px;
+  color: white;
+  border: none;
+  border-radius: 24px;
+}
+
+.categories-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.categories-title p:first-child {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.categories-title p:last-child {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.all-categories-button {
+  padding: 10px 24px;
+  border: 2px solid #9d9d9d;
+  border-radius: 24px;
+}
+
+.categories-items {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.categories-header {
+  margin-top: 20px;
+}
+
+.categoies-card {
+  width: 234px;
+  height: 234px;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categoies-card img {
+  margin: 0 auto;
+  display: block;
+}
+
+.categoies-card div p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.categoies-card p:last-child {
+  font-size: 18px !important;
+}
+
+.popular-course-items {
+  margin-top: 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.popular-course-items img {
+  width: 100%;
+}
+
+.popular-course-card {
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+}
+
+.popular-course-content {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popular-course-content-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.popular-course-content-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.popular-course-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-line {
+  background-color: #555555;
+  height: 1px;
+  margin: 10px 0px;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  animation: buttonAppear 1s forwards;
+}
+
+@keyframes buttonAppear {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.page-box {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.page-box-wrapper {
+  flex: 5;
+}
+
+.page-box-content {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.page-side {
+  flex: 4;
+}
+
+.page-box ul {
+  list-style-type: none;
+}
+
+.page-box ul li {
+  display: inline-block;
+  padding: 20px 30px;
+  border: 1px solid lightgray;
+  font-weight: bold;
+}
+
+.option-active {
+  color: #ff782d;
+  background: lightgray;
+}
